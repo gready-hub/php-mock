@@ -138,7 +138,7 @@ class Mock implements Deactivatable
      */
     public function getFQFN()
     {
-        return trym(strtolower("{$this->getNamespace()}\\$this->name"), "\\");
+        return trim(strtolower("{$this->getNamespace()}\\$this->name"), "\\");
     }
 
     /**

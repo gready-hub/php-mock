@@ -64,6 +64,8 @@ class MockFunctionGenerator
         $namespace = $this->mock->getNamespace();
         if ($namespace === "" || $namespace === null || $namespace === '\\') {
             $data["namespace"] = '';
+        } else {
+            $data["namespace"] = $namespace;
         }
 
         $this->template->setVar($data, false);
